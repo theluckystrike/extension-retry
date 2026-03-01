@@ -1,0 +1,37 @@
+{
+    "name": "extension-retry",
+    "version": "0.1.0",
+    "description": "Retry logic for Chrome extensions — exponential backoff, linear delay, jitter, max attempts, abort signals, and timeout handling for MV3.",
+    "author": "Zovo <hello@zovo.one>",
+    "license": "MIT",
+    "keywords": [
+        "chrome-extension",
+        "retry",
+        "backoff",
+        "exponential",
+        "jitter",
+        "timeout",
+        "manifest-v3",
+        "browser-extension",
+        "resilience"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/theluckystrike/extension-retry.git"
+    },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.260",
+        "typescript": "^5.3.3"
+    }
+}
